@@ -1,4 +1,4 @@
-# Fern on canbase 
+# Fern on canvas 
 
 Based on scala js examples [Scala.js](http://www.scala-js.org/).
 And following Barnsley Fern iterated function system (IFS)

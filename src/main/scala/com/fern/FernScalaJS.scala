@@ -60,15 +60,6 @@ object BarnsleyFernTransformation extends Transformation {
 
 case class CanvasCoordinates(x: Int, y: Int)
 
-object CanvasCoordinates {
-  def apply(size: BigDecimal)(p: Point): CanvasCoordinates = {
-    val x: Int = size.toInt / 2 + (p.x * size / 10).toInt
-    val y: Int = size.toInt - (p.y * size / 10).toInt
-
-    new CanvasCoordinates(x, y)
-  }
-}
-
 class Canvas2D[T](ctx: CanvasRenderingContext2D, size: BigDecimal, f: T => CanvasCoordinates) {
 
   def background(): Unit = {
@@ -89,10 +80,10 @@ object Canvas2D {
     val ctx = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
 
     def transform(p: Point): CanvasCoordinates = {
-      val x: Int = size.toInt / 2 + (p.x * size / 10).toInt
-      val y: Int = size.toInt - (p.y * size / 10).toInt
+      val x = size.toInt / 2 + (p.x * size / 10).toInt
+      val y = size.toInt - (p.y * size / 10).toInt
 
-      new CanvasCoordinates(x, y)
+      CanvasCoordinates(x, y)
     }
 
     new Canvas2D[Point](ctx, size, transform)

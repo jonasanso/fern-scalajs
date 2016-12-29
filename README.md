@@ -3,6 +3,8 @@
 Based on scala js examples [Scala.js](http://www.scala-js.org/).
 And following Barnsley Fern iterated function system (IFS)
 
+![Gerating fern](https://github.com/jonasanso/fern-scalajs/raw/master/recording.gif)
+
 ## Get started
 
 To get started, run `sbt ~fastOptJS` in this example project. This should

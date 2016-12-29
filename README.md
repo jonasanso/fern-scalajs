@@ -3,7 +3,7 @@
 Based on scala js examples [Scala.js](http://www.scala-js.org/).
 And following Barnsley Fern iterated function system (IFS)
 
-![Gerating fern](https://github.com/jonasanso/fern-scalajs/raw/master/recording.gif)
+<img src="https://github.com/jonasanso/fern-scalajs/raw/master/recording.gif" height="255" alt="Gerating fern">
 
 ## Get started
 
